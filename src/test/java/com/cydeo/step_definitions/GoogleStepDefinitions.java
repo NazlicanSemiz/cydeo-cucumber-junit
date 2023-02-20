@@ -26,7 +26,7 @@ public class GoogleStepDefinitions {
         String actualTitle = Driver.getDriver().getTitle();
 
         //Junit assertion accepts first arg as expected, second arg as actual
-        Assert.assertEquals(expectedTitle, actualTitle);
+        Assert.assertEquals("Title is not as expected!", expectedTitle, actualTitle);
         //Assert.assertTrue(actualTitle.equals(expectedTitle));
 
     }
@@ -46,7 +46,7 @@ acceptClick.click();
 
         Assert.assertEquals(actualTitle,expectedTitle);
 
-        Driver.closeDriver();
+       // Driver.closeDriver();
     }
 
 
