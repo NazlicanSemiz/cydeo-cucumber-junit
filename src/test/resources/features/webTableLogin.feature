@@ -1,6 +1,6 @@
 Feature: User should be able to login using correct credented
 
-  @wip
+
   Scenario: Positive login scenario
     Given user is on the login page of web table app
     When user enters username "Test"
@@ -8,7 +8,7 @@ Feature: User should be able to login using correct credented
     And user clicks to login button
     Then user should see url contains orders
 
-
+  @wip
   Scenario: Positive login scenario
     Given user is on the login page of web table app
     When user enters username "Test" password "Testers" and logins
