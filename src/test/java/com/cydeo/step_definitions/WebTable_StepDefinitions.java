@@ -39,7 +39,7 @@ public class WebTable_StepDefinitions {
     @Then("user should see url contains orders")
     public void user_should_see_url_contains_orders() {
 
-        BrowserUtils.verifyUrlContains("orders");
+       Driver.getDriver().getCurrentUrl().contains("orders");
     }
 
 }
