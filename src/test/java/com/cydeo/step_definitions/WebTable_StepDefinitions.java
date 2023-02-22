@@ -58,9 +58,9 @@ public class WebTable_StepDefinitions {
     @When("User enters below credentials")
     public void user_enters_below_credentials(Map<String, String> credentials) {
 
-        webTableLoginPage.inputUsername.sendKeys(credentials.get("username"));
-        webTableLoginPage.inputPassword.sendKeys(credentials.get("password"));
-        webTableLoginPage.loginButton.click();
+       // webTableLoginPage.inputUsername.sendKeys(credentials.get("username"));
+       // webTableLoginPage.inputPassword.sendKeys(credentials.get("password"));
+       // webTableLoginPage.loginButton.click();
 
         webTableLoginPage.login(credentials.get("username"), credentials.get("password"));
 
