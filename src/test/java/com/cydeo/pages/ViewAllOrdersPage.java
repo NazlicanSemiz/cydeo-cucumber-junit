@@ -13,7 +13,7 @@ public class ViewAllOrdersPage extends BasePage{
     }
 
 //we need to locate the first cell of the first row
-    @FindBy(xpath = "//table[class='table is-fullwidth']/tbody/tr[1]/td[1]")
+    @FindBy(xpath = "//table[@class='table is-fullwidth']/tbody/tr[1]/td[1]")
     public WebElement newCustomerCell;
 
 
