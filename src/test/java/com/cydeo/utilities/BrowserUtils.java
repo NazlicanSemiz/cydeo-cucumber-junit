@@ -90,4 +90,29 @@ for given duration
 
         return actualOptionsAsString;
 
-    }}
+    }
+
+    //for radioButtons
+
+    /**
+     * THIS method will accept a group radio buttons as a Lis of Element
+     * it will  loop through the List , and click to the radio button with provided attributeVlaue
+     * @param radioButtons
+     * @param attributeValue
+     */
+    public static void clickRadioButtons(List<WebElement> radioButtons, String attributeValue){
+
+      //  List<WebElement> cardTypes = orderPage.cardType;
+
+        for (WebElement each : radioButtons){
+
+            if (each.getAttribute("value").equalsIgnoreCase(attributeValue)){
+                each.click();
+            }
+        }
+
+    }
+
+
+
+}
