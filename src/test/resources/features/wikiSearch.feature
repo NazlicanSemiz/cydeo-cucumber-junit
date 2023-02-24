@@ -20,9 +20,9 @@ Feature:  Wikipedia search functionality and verifications
     Then user sees "<expectedTitle>" is in the wiki title
     Then User sees "<expectedMainHeader>" is in the main header
 
-
+      @person
     Examples: search values we are going to be using in this scenario is as below
-      | searchValue   | expectedTitle | expectedMainHeader |
-      | Steve Jobs    | Steve Jobs    | Steve Jobs         |
-      | Marie Curie   | Marie Curie   | Marie Curie        |
-      | Bob Marley | Bob Marley | Bob Marley         |
+      | searchValue | expectedTitle | expectedMainHeader |
+      | Steve Jobs  | Steve Jobs    | Steve Jobs         |
+      | Marie Curie | Marie Curie   | Marie Curie        |
+      | Bob Marley  | Bob Marley    | Bob Marley         |
